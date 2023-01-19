@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML form</title>
+    <center>
+        <marquee scrollamount="10" behavior="alternate" style="width:500px;"> 
+        <h1 style="display:inline ; color:hotpink;">
+            Student details
+        </h1>
+    </marquee>
+
+    </center>
+</head>
+<body>
+    <center>
+        
+            <form style="background-color: aqua; width:500px; height:500px; padding-top:50px; padding-bottom:50px;" action="connect.php" method="post">
+                <label style="color:blue;">
+                    first name:
+                </label>
+                <input type="text" required pattern="[A-Z]{1,1}[a-z]{1,15}" title=" enter proper name" minlength="6" maxlength="15" name="firstname">
+
+                <br></br>
+
+                <label style="color:blue;">
+                    last name:
+                </label>
+                <input type="text" required pattern="[A-Z]{1,1}[a-z]{1,15}" title="enter proper last name" name="lastname">
+
+                <br></br>
+                <label style="color: blue;" >
+                    DOB:
+                </label>
+                <input type="date" name="DOB" value="number">
+
+                <br></br>
+
+                <label style="color:blue;">
+                    Age
+                </label>
+                <input type="number" style="width:30px;" min="25" max="35" name="Age">
+
+                <br><br>
+
+                <label style="color:blue ;">
+                    Mail_ID
+                </label>
+                <input type="email" name="Mail Id">
+
+                <br></br>
+
+                <label style="color:blue ;">
+                    Gender:
+                </label>
+
+                <label>
+                    Male
+                </label>
+                <input type="checkbox" name="Male" value="M">
+                <label>
+                    Female
+                </label>
+                <input type="checkbox" name="Female" value="F">
+                <label>
+                    Others
+                </label>
+                <input type="checkbox" name="Others" value="O">
+
+                <br></br>
+
+                <label style="color:blue ;">
+                    Skills you know:
+                </label>
+                
+                <label style="color:green ;">
+                    CSS
+                </label>
+                <input type="checkbox">
+
+                <label style="color:green ;">
+                    HTML
+                </label>
+                <input type="checkbox">
+
+                <label style="color:green ;">
+                    JAVA
+                </label>
+                <input type="checkbox">
+
+                <label style="color:green ;">
+                    SQL
+                </label>
+                <input type="checkbox">
+
+                <br></br>
+
+                <label>
+                    Class timings
+                </label>
+                <input type="time">
+
+                <br></br>
+
+                <label>
+                    Upload photo
+                </label>
+                <input type="file" title="file must in jpg or document">
+
+                <br></br>
+
+                <label>
+                    password
+                </label>
+                <input type="password" minlength="1" maxlength="10" pattern="[A-Z]{1,4}[a-z]{1,4}[0-9]{1,2}" name="password"> 
+
+                <br></br>
+
+                <label>
+                    Conform password
+                </label>
+                <input type="password">
+
+                <br></br>
+
+                <input type="submit">
+
+                <input type="reset">
+
+                <br></br>
+
+                <input type="button" value="exit" style="background-color:rgb(221, 5, 5)">
+
+                <br></br>
+            </form>
+
+    </center>
+</body>
+</html>
